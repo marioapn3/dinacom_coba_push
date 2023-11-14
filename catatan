@@ -1,0 +1,3 @@
+Untuk Membuat php artisan storage:link di hosting
+
+ln -s /home/n1608806/public_html/dinacom.tech/storage/app/public/images /home/n1608806/public_html/dinacom.tech/public/storage
