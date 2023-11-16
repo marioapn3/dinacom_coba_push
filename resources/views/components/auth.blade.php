@@ -99,7 +99,8 @@
                                     </svg>
                                     <span class="sr-only">Info</span>
                                     <div>
-                                        <span class="font-small">Pendaftaran akan dikenakan biaya sebesar 50K -/TIM</span>
+                                        <span class="font-small">Pendaftaran akan dikenakan biaya sebesar 50K
+                                            -/TIM</span>
                                     </div>
                                 </div>
                                 <form class="space-y-6 lg:grid grid-cols-2 gap-3" action="{{ route('register') }}"
@@ -129,12 +130,13 @@
                                         @enderror
                                     </div>
                                     <div>
-                                        <label for="contest_category"
-                                            class="block mb-2 text-sm font-medium text-white">Category Contest</label>
-                                        <select name="contest_category" id="contest_category"
+                                        <label for="level_category"
+                                            class="block mb-2 text-sm font-medium text-white">Category Level</label>
+                                        <select name="level_category" id="level_category"
                                             class="bg-darkgreen border-2 border-white text-white text-sm rounded-lg focus:ring-lightgrn focus:border-lightgrn block w-full p-2.5"
                                             placeholder="Your school name " required>
-                                            <option value="APPS">APPS</option>
+                                            <option value="SMA/SMK">SMA/SMK</option>
+                                            <option value="Mahasiswa">Mahasiswa</option>
                                         </select>
                                     </div>
                                     {{-- <div>

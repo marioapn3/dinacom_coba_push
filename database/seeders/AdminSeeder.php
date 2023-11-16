@@ -17,14 +17,14 @@ class AdminSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'Admin',
-            'phone_lead'=>'0898867867',
-            'student_card'=>'Admin',
-            'contest_category'=>'Admin',
-            'name_school'=>'UDINUS',
-            'name_team'=>'DNCC',
-            'email' =>'admin@gmail.com',
+            'phone_lead' => '0898867867',
+            'student_card' => 'Admin',
+            'level_category' => 'Admin',
+            'name_school' => 'UDINUS',
+            'name_team' => 'DNCC',
+            'email' => 'admin@gmail.com',
             'password' => Hash::make('12133611'),
-            'isAdmin'=> 1
+            'isAdmin' => 1
         ]);
     }
 }

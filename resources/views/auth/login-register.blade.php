@@ -1,3 +1,5 @@
+{{-- salah --}}
+
 <!-- Main modal -->
 <div id="authentication-modal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
@@ -86,7 +88,7 @@
                     <div class="p-4 bg-medgrn rounded-lg" id="daftar" role="tabpanel" aria-labelledby="daftar-tab">
                         <div class="py-6 px-6 lg:px-8">
                             <h3 class="mb-4 text-xl font-medium text-white">
-                                Daftar sekarang !
+                                Daftar yuk !
                             </h3>
                             <form class="space-y-6" action="{{ route('register') }}" method="POST">
                                 @csrf
@@ -113,12 +115,13 @@
                                     @enderror
                                 </div>
                                 <div>
-                                    <label for="contest_category"
-                                        class="block mb-2 text-sm font-medium text-white">Category Contest</label>
-                                    <select name="contest_category" id="contest_category"
+                                    <label for="level_category"
+                                        class="block mb-2 text-sm font-medium text-white">Category Level</label>
+                                    <select name="level_category" id="level_category"
                                         class="bg-darkgreen border-2 border-white text-white text-sm rounded-lg focus:ring-lightgrn focus:border-lightgrn block w-full p-2.5"
                                         placeholder="Your school name " required>
-                                        <option value="APPS">APPS</option>
+                                        <option value="SMA/SMK">SMA/SMK</option>
+                                        <option value="Mahasiswa">Mahasiswa</option>
                                     </select>
                                 </div>
                                 {{-- <div>

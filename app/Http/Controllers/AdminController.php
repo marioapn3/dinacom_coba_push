@@ -82,7 +82,7 @@ class AdminController extends Controller
 
         $peserta = User::where('isAdmin', 0)->get();
         $finalis = Finalis::all();
-        
+
         return view('pages.Admin.peserta.index', ['peserta' => $peserta, 'finalis' => $finalis]);
     }
 
@@ -197,7 +197,7 @@ class AdminController extends Controller
         // dd($deadline);
         $team->status_contest = $request->team_status;
         $team->save();
-        return redirect()->back();
+        return redirect()->route('admin.team');
     }
     /**
      * Display the specified resource.
@@ -250,7 +250,7 @@ class AdminController extends Controller
 
     public function Teamexport($id)
     {
-        $user=User::find($id);
-        return Excel::download(new TeamExport($id), $user->name_team.'_users.xlsx');
+        $user = User::find($id);
+        return Excel::download(new TeamExport($id), $user->name_team . '_users.xlsx');
     }
 }

@@ -69,8 +69,16 @@
                     class="mr-3">
                 <div class="flex flex-col w-full">
                     <label for="sklh" class="w-fit">
-                        <span class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Asal
-                            Sekolah</span>
+                        @if (Auth::user()->level_category == 'SMA/SMK')
+                            <span
+                                class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Asal
+                                Sekolah</span>
+                        @else
+                            <span
+                                class="text-slate-500 font-semibold after:content-['*'] after:text-red-600 after:ml-0.5">Asal
+                                Universitas</span>
+                        @endif
+
                     </label>
                     <input type="text" name="nameSchool" value="{{ old('nameSchool') }}" id="sklh"
                         placeholder="Asal Sekolah"

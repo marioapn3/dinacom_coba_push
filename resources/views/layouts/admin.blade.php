@@ -27,11 +27,10 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-  
-    <link rel="stylesheet" type="text/css"
-    href="https://cdn.datatables.net/1.13.1/css/dataTables.jqueryui.min.css" />
-       {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
-  
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.jqueryui.min.css" />
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
+
 
 
 
@@ -45,8 +44,8 @@
     <link href="{{ asset('assets/Admin/assets/css/argon-dashboard-tailwind.css?v=1.0.1') }}" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .custom-select{
-width: 100px;
+        .custom-select {
+            width: 100px;
         }
     </style>
 </head>
@@ -74,8 +73,8 @@ width: 100px;
         <div class="items-center block w-auto  overflow-auto grow basis-full">
             <ul class="flex flex-col pl-0 mb-0">
                 <li class="mt-0.5 w-full ">
-                    <a class="py-2.7 {{ set_active_admin(['admin','admin.deadlinependaf','admin.deadlineberkas']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4  transition-colors"
-                        href="{{route('admin')}}">
+                    <a class="py-2.7 {{ set_active_admin(['admin', 'admin.deadlinependaf', 'admin.deadlineberkas']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4  transition-colors"
+                        href="{{ route('admin') }}">
                         <div
                             class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-blue-500 ni ni-tv-2"></i>
@@ -84,8 +83,8 @@ width: 100px;
                     </a>
                 </li>
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 {{ set_active_admin(['admin.peserta','admin.pesertaEdit']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4  transition-colors"
-                        href="{{route('admin.peserta')}}">
+                    <a class="py-2.7 {{ set_active_admin(['admin.peserta', 'admin.pesertaEdit']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4  transition-colors"
+                        href="{{ route('admin.peserta') }}">
                         <div
                             class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-blue-500 ni ni-tv-2"></i>
@@ -95,8 +94,8 @@ width: 100px;
                 </li>
 
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 {{ set_active_admin(['admin.team','admin.team.edit']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="{{route('admin.team')}}">
+                    <a class="py-2.7 {{ set_active_admin(['admin.team', 'admin.team.edit']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors"
+                        href="{{ route('admin.team') }}">
                         <div
                             class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-orange-500 ni ni-calendar-grid-58"></i>
@@ -105,8 +104,8 @@ width: 100px;
                     </a>
                 </li>
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 {{ set_active_admin(['admin.finalis','admin.editfinalis']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors"
-                        href="{{route('admin.finalis')}}">
+                    <a class="py-2.7 {{ set_active_admin(['admin.finalis', 'admin.editfinalis']) }} text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors"
+                        href="{{ route('admin.finalis') }}">
                         <div
                             class="mr-2  flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
                             <i class="relative top-0 text-sm leading-normal text-orange-500 ni ni-calendar-grid-58"></i>
@@ -140,9 +139,6 @@ width: 100px;
                         </div>
 
                     </form>
-                    <a class="" href="./pages/sign-in.html">
-
-                    </a>
                 </li>
             </ul>
         </div>
@@ -169,35 +165,35 @@ width: 100px;
                     <h6 class="mb-0 font-bold text-white capitalize">Dashboard</h6>
                 </nav>
 
-             
-                    <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
-                        <!-- online builder btn  -->
-                        <!-- <li class="flex items-center">
+
+                <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
+                    <!-- online builder btn  -->
+                    <!-- <li class="flex items-center">
                 <a class="inline-block px-8 py-2 mb-0 mr-4 text-xs font-bold text-center text-blue-500 uppercase align-middle transition-all ease-in bg-transparent border border-blue-500 border-solid rounded-lg shadow-none cursor-pointer leading-pro hover:-translate-y-px active:shadow-xs hover:border-blue-500 active:bg-blue-500 active:hover:text-blue-500 hover:text-blue-500 tracking-tight-rem hover:bg-transparent hover:opacity-75 hover:shadow-none active:text-white active:hover:bg-transparent" target="_blank" href="https://www.creative-tim.com/builder/soft-ui?ref=navbar-dashboard&amp;_ga=2.76518741.1192788655.1647724933-1242940210.1644448053">Online Builder</a>
               </li> -->
-                        <li class="flex items-center">
-                            <a href="./pages/sign-in.html"
-                                class="block px-0 py-2 text-sm font-semibold text-white transition-all ease-nav-brand">
-                                <i class="fa fa-user sm:mr-1"></i>
-                                <span class="hidden sm:inline">{{Auth::user()->name}}</span>
-                            </a>
-                        </li>
-                        <li class="flex items-center pl-4 xl:hidden">
-                            <a href="javascript:;" class="block p-0 text-sm text-white transition-all ease-nav-brand"
-                                sidenav-trigger>
-                                <div class="w-4.5 overflow-hidden">
-                                    <i class="ease mb-0.75 relative block h-0.5 rounded-sm bg-white transition-all"></i>
-                                    <i class="ease mb-0.75 relative block h-0.5 rounded-sm bg-white transition-all"></i>
-                                    <i class="ease relative block h-0.5 rounded-sm bg-white transition-all"></i>
-                                </div>
-                            </a>
-                        </li>
-                  
+                    <li class="flex items-center">
+                        <a href="{{ route('admin') }}"
+                            class="block px-0 py-2 text-sm font-semibold text-white transition-all ease-nav-brand">
+                            <i class="fa fa-user sm:mr-1"></i>
+                            <span class="hidden sm:inline">{{ Auth::user()->name }}</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center pl-4 xl:hidden">
+                        <a href="javascript:;" class="block p-0 text-sm text-white transition-all ease-nav-brand"
+                            sidenav-trigger>
+                            <div class="w-4.5 overflow-hidden">
+                                <i class="ease mb-0.75 relative block h-0.5 rounded-sm bg-white transition-all"></i>
+                                <i class="ease mb-0.75 relative block h-0.5 rounded-sm bg-white transition-all"></i>
+                                <i class="ease relative block h-0.5 rounded-sm bg-white transition-all"></i>
+                            </div>
+                        </a>
+                    </li>
 
-                        <!-- notifications -->
 
-                    </ul>
-                </div>
+                    <!-- notifications -->
+
+                </ul>
+            </div>
             </div>
         </nav>
 
@@ -206,7 +202,7 @@ width: 100px;
         <div class="w-full px-6 py-6 mx-auto">
             <!-- table 1 -->
 
-        @yield('content')
+            @yield('content')
             <!-- cards row 3 -->
 
             <!-- card 2 -->
@@ -260,7 +256,8 @@ width: 100px;
 </body>
 <!-- plugin for charts  -->
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
 <script src="{{ asset('assets/Admin/assets/js/plugins/chartjs.min.js') }}" async></script>
 <!-- plugin for scrollbar  -->
 <script src="{{ asset('assets/Admin/assets/js/plugins/perfect-scrollbar.min.js') }}" async></script>

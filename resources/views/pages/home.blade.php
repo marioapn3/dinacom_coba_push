@@ -311,14 +311,15 @@
                 </h1>
                 <div class="flex flex-wrap justify-center">
                     <div class="medpartImg m-8" data-aos="flip-left">
-                        <img src="{{asset('assets/images/MedPart/Programmer_males.png')}}" class="md:w-[12.5rem] md:h-[12.5rem] w-[5rem] h-[5rem]"
-                            alt="" title="Programmer Males;"/>
+                        <img src="{{ asset('assets/images/MedPart/Programmer_males.png') }}"
+                            class="md:w-[12.5rem] md:h-[12.5rem] w-[5rem] h-[5rem]" alt=""
+                            title="Programmer Males;" />
                     </div>
                     <div class="medpartImg m-8" data-aos="flip-left">
-                        <img src="{{asset('assets/images/MedPart/INFOLOMBA.png')}}" class="md:w-[12.5rem] md:h-[12.5rem] w-[5rem] h-[5rem]"
-                            alt="" title="Info Lomba"/>
+                        <img src="{{ asset('assets/images/MedPart/INFOLOMBA.png') }}"
+                            class="md:w-[12.5rem] md:h-[12.5rem] w-[5rem] h-[5rem]" alt="" title="Info Lomba" />
                     </div>
-                   
+
                 </div>
             </div>
         </div>

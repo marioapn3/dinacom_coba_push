@@ -41,7 +41,7 @@ class RegisteredUserController extends Controller
             'password_regis'          => ['required', 'confirmed', Rules\Password::defaults()],
             'phone_lead'        => ['required', 'max:14', 'min:11'],
             // 'name_school'    => ['required'],
-            'contest_category'  => ['required']
+            'level_category'  => ['required']
         ]);
 
         $user = User::create([
@@ -49,14 +49,14 @@ class RegisteredUserController extends Controller
             'email'        => $request->email_regis,
             'password'     => Hash::make($request->password_regis),
             'phone_lead'   => $request->phone_lead,
-            'contest_category'  => $request->contest_category,
+            'level_category'  => $request->level_category,
         ]);
 
         event(new Registered($user));
 
         Auth::login($user);
 
-        Mail::to($user->email)->send(new AfterRegister($user));
+        // Mail::to($user->email)->send(new AfterRegister($user));
 
         return redirect(RouteServiceProvider::HOME);
     }

@@ -18,9 +18,9 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('phone_lead');
             $table->string('student_card')->nullable(); // kartu pelajar
-            $table->string('contest_category');
+            $table->string('level_category');
             $table->string('name_school')->nullable(); // is institution 
-            $table->string('name_team')->nullable(); 
+            $table->string('name_team')->nullable();
             $table->string('tutor')->nullable(); // is guru pembimbing
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
