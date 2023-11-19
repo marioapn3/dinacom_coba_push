@@ -7,52 +7,42 @@
 @section('content')
     {{-- landing page --}}
     <section id="header">
-        <div class="section bg-[url('./assets/images/banner_bg.webp')] bg-cover md:min-h-[100vh] pt-36 pb-12">
+        <div class="section md:min-h-[100vh] pt-36 pb-12">
             <div class="grid md:grid-cols-2 gap-4 container mx-auto">
                 <div class="mt-10">
-                    <h1 class="text-textgreen font-extrabold lg:text-7xl md:text-6xl text-5xl md:mx-6 font-bold font-ubuntu text-center md:text-left mb-2"
+                    <h1 class="bg-gradient-to-r from-blue to-pink bg-clip-text text-transparent font-extrabold lg:text-7xl md:text-6xl text-5xl md:mx-6 text-center md:text-left mb-2 drop-shadow-buttonShadow"
                         id="title_dinacom">
 
                     </h1>
-
                     <h1
-                        class="text-lightgrn lg:text-4xl md:text-3xl text-3xl font-ubuntu text-center md:mx-6 md:text-left mb-2">
+                        class="text-white text-shadow-lg shadow-pink lg:text-4xl md:text-3xl text-3xl text-center md:mx-6 md:text-left my-4 drop-shadow-buttonShadow">
                         The Light of Technology for Future Economy
                     </h1>
                     <p
-                        class="text-white xl:text-3xl lg:text-2xl md:text-2xl text-xl xl:text-justify lg:text-justify md:text-center text-center mx-6 mb-8 mt-14">
+                        class="text-white xl:text-3xl lg:text-2xl md:text-2xl text-xl xl:text-justify lg:text-justify md:text-center text-center mx-6 mb-8 mt-8">
                         Daftarkan dirimu dan tim dalam ajang kompetisi aplikasi
                         bergengsi untuk siswa SMA/SMK. Dan tunjukkanlah kemampuan
                         kerjasama timmu dalam menyelesaikan berbagai topik permasalahan
                         di masyarakat melalui inovasi teknologi aplikasi.
                     </p>
-                    @if (!Auth::user())
+                    {{-- @if (!Auth::user()) --}}
+                    <a href="">
                         <button type="submit" data-modal-toggle="authentication-modal"
-                            class="bg-btngreen mx-auto md:mx-6 my-6 w-1/2 block py-4 pr-4 pl-3 lg:text-4xl md:text-2xl text-2xl text-center mt-2 rounded-[20px] md:border-0 text-white md: hover:text-white hover:bg-[#5ECE9F] hover:text-white md: hover:bg-textgreen">Daftar</button>
-                    @endif
-                    <div class="w-3/4 mx-auto mb-[100px] md:mx-6 flex justify-center md:justify-start">
-                        <a href="https://www.instagram.com/dinacom_official" target="blank"
-                            class="text-white text-[2rem] md:text-[4rem] mr-2">
-                            <i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCbGj3OU4Qq8KOgaY9zuyZsA" target="blank"
-                            class="text-white text-[2rem] md:text-[4rem] mr-2">
-                            <i class="fab fa-youtube"></i></a>
-                    </div>
+                            class="mx-auto md:mx-6 my-6 block py-4 px-8 lg:text-2xl md:text-2xl text-2xl text-center mt-2 rounded-[20px] md:border-0 text-white bg-gradient-to-b from-grape-600 to-grape-700 drop-shadow-buttonShadow">Guidebook</button>
+                    </a>
+                    {{-- @endif --}}
                 </div>
                 <div class="order-first md:order-last flex justify-center items-center">
-                    <img src="{{ asset('assets/images/mascot.webp') }}" class="w-[43rem]"
-                        style="animation: float 6s ease-in-out infinite;" alt="Maskot Dinacom 2023" />
+                    <img src="{{ asset('assets/images/mascot.webp') }}" class="w-[28rem]"
+                        style="animation: float 6s ease-in-out infinite;" alt="Maskot Dinacom 2024" />
                 </div>
             </div>
         </div>
     </section>
-    <section data-aos="fade-up">
-        <img src="{{ asset('assets/images/Aqua.webp') }}"
-            class="w-full lg:h-[900px] md:h-[800px] h-[500px] object-cover max-w-full" alt="" />
-    </section>
     <section id="about">
-        <div class="section bg-[url('./assets/images/about_bg.webp')] bg-cover pt-12 md:pt-36 pb-10">
+        <div class="section pt-12 md:pt-36 pb-10">
             <div class="container mx-auto">
+                {{-- about section --}}
                 <div class="mb-[10rem]">
                     <h1 class="text-textgreen lg:text-7xl md:text-5xl text-4xl md:mx-6 font-bold font-ubuntu text-center"
                         data-aos="fade-up">
@@ -82,6 +72,7 @@
                         data-aos="fade-down"
                         class="bg-btngreen mx-auto  my-6 w-3/4 block py-4 pr-4 pl-3 lg:text-4xl md:text-2xl text-2xl text-center mt-2 rounded-[20px] md:border-0 text-white md: hover:text-white hover:bg-[#5ECE9F] hover:text-white md: hover:bg-textgreen">Guidebook</a>
                 </div>
+                {{-- hadiah section --}}
                 <div class="mx-auto md:mb-[10rem] mb-[5rem]">
                     <h1 class="text-lightgrn lg:text-6xl md:text-4xl text-3xl mb-10 font-ubuntu text-center md:mx-6 mb-2 "
                         data-aos="fade-up">
@@ -146,6 +137,7 @@
                         </div>
                     </div>
                 </div>
+                {{-- timeline section --}}
                 <div class="mx-auto mb-[10rem]">
                     <h1 class="text-lightgrn lg:text-6xl md:text-4xl text-3xl mb-10 font-ubuntu text-center"
                         data-aos="fade-up">
@@ -300,9 +292,134 @@
                         </div>
                     </div>
                 </div>
+                {{-- faq section --}}
+                <div class="mx-auto mb-[10rem]">
+                    <h1 class="text-white font-extrabold lg:text-6xl md:text-4xl text-3xl mb-20 text-center"
+                        data-aos="fade-up">
+                        Frequently Asked Question
+                    </h1>
+                    <div class="container w-full lg:w-3/4 mx-auto">
+                        <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
+                            <h2>
+                                <button id="faqs-title-01" type="button"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
+                                    <span class="font-bold">Do I need to pay any money to register for the Dinacom? </span>
+                                    <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center rotate-90 transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="faqs-text-01" role="region" aria-labelledby="faqs-title-01"
+                                class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
+                                :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                <div class="overflow-hidden">
+                                    <p class="pb-3 text-lg">
+                                        Yes, a registration fee is required to participate in Dinacom. The fee is IDR 50,000
+                                        for high school (SMA/SMK) students and IDR 70,000 for university students.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
+                            <h2>
+                                <button id="faqs-title-01" type="button"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
+                                    <span class="font-bold">What are the rules for the DINACOM 2024 competition? </span>
+                                    <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center rotate-90 transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="faqs-text-01" role="region" aria-labelledby="faqs-title-01"
+                                class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
+                                :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                <div class="overflow-hidden">
+                                    <p class="pb-3 text-lg">
+                                        The rules for the DINACOM 2024 competition are as follows:<br>
+                                        * Competition materials must be original and have never been submitted to any other
+                                        competition. <br>
+                                        * Competition materials must meet the terms and conditions specified by the
+                                        committee.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
+                            <h2>
+                                <button id="faqs-title-01" type="button"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
+                                    <span class="font-bold">How will the winners of DINACOM 2024 be determined?</span>
+                                    <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center rotate-90 transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="faqs-text-01" role="region" aria-labelledby="faqs-title-01"
+                                class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
+                                :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                <div class="overflow-hidden">
+                                    <p class="pb-3 text-lg">
+                                        The winners of DINACOM 2024 will be determined by a panel of judges. The judges will
+                                        assess the creativity, originality, and technical skills of the participants.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
+                            <h2>
+                                <button id="faqs-title-01" type="button"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
+                                    <span class="font-bold">When will the results of DINACOM 2024 be announced?</span>
+                                    <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                        <rect y="7" width="16" height="2" rx="1"
+                                            class="transform origin-center rotate-90 transition duration-200 ease-out"
+                                            :class="{ '!rotate-180': expanded }" />
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="faqs-text-01" role="region" aria-labelledby="faqs-title-01"
+                                class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
+                                :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
+                                <div class="overflow-hidden">
+                                    <p class="pb-3 text-lg">
+                                        The results of DINACOM 2024 will be announced through the DINACOM website and DNCC
+                                        Semarang's social media.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <section id="mitra">
         <div class="section bg-medgrn py-24">
             <div class="container mx-auto">
@@ -325,7 +442,7 @@
         </div>
     </section>
     <section id="sponsor">
-        <div class="section bg-[url('./assets/images/banner_bg.png')] py-12 md:py-24">
+        <div class="section py-12 md:py-24">
             <div class="container mx-6 md:mx-auto">
                 <h1 class="text-textgreen text-center lg:text-6xl md:text-4xl text-3xl mb-10" data-aos="fade-up">
                     Sponsor

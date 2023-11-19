@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="font-ubuntu m-0 p-0 overflow-x-hidden w-full bg-darkgreen">
+<body class="font-sarpanch m-0 p-0 overflow-x-hidden w-full bg-gradient-to-b from-grape-700 to-grape-600">
 
     {{-- Start Navbar --}}
     @include('components.navbar')
@@ -34,7 +34,7 @@
 
 
     {{-- Modal Login and Register --}}
-  <x-auth></x-auth>
+    <x-auth></x-auth>
 
     @include('components.script')
 </body>
