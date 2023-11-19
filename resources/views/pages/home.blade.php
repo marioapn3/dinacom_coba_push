@@ -298,11 +298,11 @@
                         data-aos="fade-up">
                         Frequently Asked Question
                     </h1>
-                    <div class="container w-full lg:w-3/4 mx-auto">
+                    <div class="container w-11/12 lg:w-3/4 mx-auto">
                         <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
                             <h2>
                                 <button id="faqs-title-01" type="button"
-                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white lg:text-2xl text-xl"
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
                                     <span class="font-bold">Do I need to pay any money to register for the Dinacom? </span>
                                     <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
@@ -320,7 +320,7 @@
                                 class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="pb-3 text-lg">
+                                    <p class="pb-3 lg:text-lg text-base">
                                         Yes, a registration fee is required to participate in Dinacom. The fee is IDR 50,000
                                         for high school (SMA/SMK) students and IDR 70,000 for university students.
                                     </p>
@@ -330,7 +330,7 @@
                         <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
                             <h2>
                                 <button id="faqs-title-01" type="button"
-                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white lg:text-2xl text-xl"
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
                                     <span class="font-bold">What are the rules for the DINACOM 2024 competition? </span>
                                     <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
@@ -348,7 +348,7 @@
                                 class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="pb-3 text-lg">
+                                    <p class="pb-3 lg:text-lg text-base">
                                         The rules for the DINACOM 2024 competition are as follows:<br>
                                         * Competition materials must be original and have never been submitted to any other
                                         competition. <br>
@@ -361,7 +361,7 @@
                         <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
                             <h2>
                                 <button id="faqs-title-01" type="button"
-                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white lg:text-2xl text-xl"
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
                                     <span class="font-bold">How will the winners of DINACOM 2024 be determined?</span>
                                     <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
@@ -379,7 +379,7 @@
                                 class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="pb-3 text-lg">
+                                    <p class="pb-3 lg:text-lg text-base">
                                         The winners of DINACOM 2024 will be determined by a panel of judges. The judges will
                                         assess the creativity, originality, and technical skills of the participants.
                                     </p>
@@ -389,7 +389,7 @@
                         <div x-data="{ expanded: false }" class=" bg-white bg-opacity-[5%] py-8 px-9 mb-7 rounded">
                             <h2>
                                 <button id="faqs-title-01" type="button"
-                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white text-2xl"
+                                    class="flex items-center justify-between w-full text-left font-semibold py-2 text-white lg:text-2xl text-xl"
                                     @click="expanded = !expanded" :aria-expanded="expanded" aria-controls="faqs-text-01">
                                     <span class="font-bold">When will the results of DINACOM 2024 be announced?</span>
                                     <svg class="fill-pink shrink-0 ml-8" width="16" height="16"
@@ -407,7 +407,7 @@
                                 class="grid text-sm text-slate-100  overflow-hidden transition-all duration-300 ease-in-out"
                                 :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'">
                                 <div class="overflow-hidden">
-                                    <p class="pb-3 text-lg">
+                                    <p class="pb-3 lg:text-lg text-base">
                                         The results of DINACOM 2024 will be announced through the DINACOM website and DNCC
                                         Semarang's social media.
                                     </p>
